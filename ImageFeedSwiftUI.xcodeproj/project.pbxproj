@@ -11,6 +11,16 @@
 		A34421F82869D1CB00CCD8CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34421F72869D1CB00CCD8CC /* ContentView.swift */; };
 		A34421FA2869D1CD00CCD8CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A34421F92869D1CD00CCD8CC /* Assets.xcassets */; };
 		A34421FD2869D1CD00CCD8CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A34421FC2869D1CD00CCD8CC /* Preview Assets.xcassets */; };
+		A3A2A1692875B54900EB78C2 /* Utilities in Resources */ = {isa = PBXBuildFile; fileRef = A3A2A1672875B54800EB78C2 /* Utilities */; };
+		A3A2A16A2875B54900EB78C2 /* Service in Resources */ = {isa = PBXBuildFile; fileRef = A3A2A1682875B54800EB78C2 /* Service */; };
+		A3A2A16E2875B55900EB78C2 /* PhotoService in Resources */ = {isa = PBXBuildFile; fileRef = A3A2A16C2875B55900EB78C2 /* PhotoService */; };
+		A3A2A1702875BE5700EB78C2 /* PhotoList in Resources */ = {isa = PBXBuildFile; fileRef = A3A2A16F2875BE5700EB78C2 /* PhotoList */; };
+		A3A2A17E2875C98D00EB78C2 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A2A17D2875C98D00EB78C2 /* Photo.swift */; };
+		A3A2A1802875C99D00EB78C2 /* PhotoDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A2A17F2875C99D00EB78C2 /* PhotoDataRequest.swift */; };
+		A3A2A1822875CA1C00EB78C2 /* RestAPIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A2A1812875CA1C00EB78C2 /* RestAPIHelper.swift */; };
+		A3A2A1842875CA2C00EB78C2 /* HelperClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A2A1832875CA2C00EB78C2 /* HelperClass.swift */; };
+		A3A2A1862875CD6500EB78C2 /* PhotoCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3A2A1852875CD6500EB78C2 /* PhotoCellViewModel.swift */; };
+		A3A2A1892876DFE400EB78C2 /* SwiftUIInfiniteList in Frameworks */ = {isa = PBXBuildFile; productRef = A3A2A1882876DFE400EB78C2 /* SwiftUIInfiniteList */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +29,15 @@
 		A34421F72869D1CB00CCD8CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A34421F92869D1CD00CCD8CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A34421FC2869D1CD00CCD8CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A3A2A1672875B54800EB78C2 /* Utilities */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Utilities; sourceTree = "<group>"; };
+		A3A2A1682875B54800EB78C2 /* Service */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Service; sourceTree = "<group>"; };
+		A3A2A16C2875B55900EB78C2 /* PhotoService */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PhotoService; sourceTree = "<group>"; };
+		A3A2A16F2875BE5700EB78C2 /* PhotoList */ = {isa = PBXFileReference; lastKnownFileType = folder; path = PhotoList; sourceTree = "<group>"; };
+		A3A2A17D2875C98D00EB78C2 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Photo.swift; path = ImageFeedSwiftUI/PhotoList/Model/Photo.swift; sourceTree = "<group>"; };
+		A3A2A17F2875C99D00EB78C2 /* PhotoDataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoDataRequest.swift; path = ImageFeedSwiftUI/PhotoService/PhotoDataRequest.swift; sourceTree = "<group>"; };
+		A3A2A1812875CA1C00EB78C2 /* RestAPIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RestAPIHelper.swift; path = ImageFeedSwiftUI/Service/RestAPIHelper.swift; sourceTree = "<group>"; };
+		A3A2A1832875CA2C00EB78C2 /* HelperClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HelperClass.swift; path = ImageFeedSwiftUI/Utilities/HelperClass.swift; sourceTree = "<group>"; };
+		A3A2A1852875CD6500EB78C2 /* PhotoCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoCellViewModel.swift; path = ImageFeedSwiftUI/PhotoList/ViewModel/PhotoCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3A2A1892876DFE400EB78C2 /* SwiftUIInfiniteList in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +55,11 @@
 		A34421E92869D1CB00CCD8CC = {
 			isa = PBXGroup;
 			children = (
+				A3A2A1852875CD6500EB78C2 /* PhotoCellViewModel.swift */,
+				A3A2A1832875CA2C00EB78C2 /* HelperClass.swift */,
+				A3A2A1812875CA1C00EB78C2 /* RestAPIHelper.swift */,
+				A3A2A17F2875C99D00EB78C2 /* PhotoDataRequest.swift */,
+				A3A2A17D2875C98D00EB78C2 /* Photo.swift */,
 				A34421F42869D1CB00CCD8CC /* ImageFeedSwiftUI */,
 				A34421F32869D1CB00CCD8CC /* Products */,
 			);
@@ -51,6 +76,10 @@
 		A34421F42869D1CB00CCD8CC /* ImageFeedSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				A3A2A16F2875BE5700EB78C2 /* PhotoList */,
+				A3A2A16C2875B55900EB78C2 /* PhotoService */,
+				A3A2A1682875B54800EB78C2 /* Service */,
+				A3A2A1672875B54800EB78C2 /* Utilities */,
 				A34421F52869D1CB00CCD8CC /* ImageFeedSwiftUIApp.swift */,
 				A34421F72869D1CB00CCD8CC /* ContentView.swift */,
 				A34421F92869D1CD00CCD8CC /* Assets.xcassets */,
@@ -83,6 +112,9 @@
 			dependencies = (
 			);
 			name = ImageFeedSwiftUI;
+			packageProductDependencies = (
+				A3A2A1882876DFE400EB78C2 /* SwiftUIInfiniteList */,
+			);
 			productName = ImageFeedSwiftUI;
 			productReference = A34421F22869D1CB00CCD8CC /* ImageFeedSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +143,9 @@
 				Base,
 			);
 			mainGroup = A34421E92869D1CB00CCD8CC;
+			packageReferences = (
+				A3A2A1872876DFE400EB78C2 /* XCRemoteSwiftPackageReference "swiftui-infinite-list" */,
+			);
 			productRefGroup = A34421F32869D1CB00CCD8CC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,8 +160,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3A2A16A2875B54900EB78C2 /* Service in Resources */,
 				A34421FD2869D1CD00CCD8CC /* Preview Assets.xcassets in Resources */,
+				A3A2A1692875B54900EB78C2 /* Utilities in Resources */,
+				A3A2A1702875BE5700EB78C2 /* PhotoList in Resources */,
 				A34421FA2869D1CD00CCD8CC /* Assets.xcassets in Resources */,
+				A3A2A16E2875B55900EB78C2 /* PhotoService in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +176,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3A2A1862875CD6500EB78C2 /* PhotoCellViewModel.swift in Sources */,
+				A3A2A1842875CA2C00EB78C2 /* HelperClass.swift in Sources */,
+				A3A2A1822875CA1C00EB78C2 /* RestAPIHelper.swift in Sources */,
+				A3A2A1802875C99D00EB78C2 /* PhotoDataRequest.swift in Sources */,
+				A3A2A17E2875C98D00EB78C2 /* Photo.swift in Sources */,
 				A34421F82869D1CB00CCD8CC /* ContentView.swift in Sources */,
 				A34421F62869D1CB00CCD8CC /* ImageFeedSwiftUIApp.swift in Sources */,
 			);
@@ -339,6 +383,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A3A2A1872876DFE400EB78C2 /* XCRemoteSwiftPackageReference "swiftui-infinite-list" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/globulus/swiftui-infinite-list";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A3A2A1882876DFE400EB78C2 /* SwiftUIInfiniteList */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A3A2A1872876DFE400EB78C2 /* XCRemoteSwiftPackageReference "swiftui-infinite-list" */;
+			productName = SwiftUIInfiniteList;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A34421EA2869D1CB00CCD8CC /* Project object */;
 }

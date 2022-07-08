@@ -6,36 +6,47 @@
 //
 
 import SwiftUI
+import SwiftUIInfiniteList
 
 struct ContentView: View {
+    @State var results: [Photo] = []
+    var page: Int = 0
+    
+    let columns: [GridItem] =
+    Array(repeating: .init(.flexible()), count: 2)
+    
     var body: some View {
-        List() {
-            ForEach(0..<3) { row in
-                HStack {
-                    ForEach(0..<2) { column in
-                        GridCell(title: "\(column)")
-                    }
+        ScrollView {
+            LazyVGrid(columns: columns) {
+                ForEach(results, id: \.self) { photo in
+                    GridCell(photo: photo)
+                        .onAppear {
+                            if results.last == photo {
+                                fetchData(page: page + 1)
+                            }
+                        }
                 }
             }
+            .task {
+                self.fetchData(page: page)
+            }
         }
-        .padding(0.0)
     }
 }
 
+
 struct GridCell: View {
-    let title: String
+    let photo: Photo
+
     var body: some View {
         ZStack {
-            Image("Image")
-                .resizable()
-                .scaledToFit()
+            AsyncImage(url: PhotoCellViewModel(photo).url)
                 .frame(height: 300)
-                .background(.white)
                 .overlay(alignment: .bottom, content: {
-                    Text(title)
+                    Text(photo.author ?? "")
                         .frame(height: 30)
-                        .foregroundColor(.black)
-                        .font(.title3)
+                        .foregroundColor(.white)
+                        .font(.caption)
                 })
         }
     }
@@ -44,5 +55,19 @@ struct GridCell: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+
+extension ContentView {
+    func fetchData(page: Int = 0) {
+        DataNetworkService().fetchDataFor(request: PhotoDataRequest(endPoint: URLEndPoint.list)) { results in
+            switch results {
+            case .success(let data):
+                self.results += data
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 }
