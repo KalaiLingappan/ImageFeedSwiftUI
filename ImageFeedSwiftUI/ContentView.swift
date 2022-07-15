@@ -7,9 +7,11 @@
 
 import SwiftUI
 import SwiftUIInfiniteList
+import Combine
 
 struct ContentView: View {
-    @State var results: [Photo] = []
+    @ObservedObject var viewModel = ImageFeedViewModel(service: DataNetworkService())
+    
     var page: Int = 0
     
     let columns: [GridItem] =
@@ -18,22 +20,24 @@ struct ContentView: View {
     var body: some View {
         ScrollView {
             LazyVGrid(columns: columns) {
-                ForEach(results, id: \.self) { photo in
+                ForEach(viewModel.photos, id: \.self) { photo in
                     GridCell(photo: photo)
                         .onAppear {
-                            if results.last == photo {
-                                fetchData(page: page + 1)
+                            Task {
+                                if viewModel.photos.last == photo {
+                                    await fetchData()
+                                }
                             }
                         }
                 }
             }
+            .errorAlert(error: $viewModel.alertMessage)
             .task {
-                self.fetchData(page: page)
+                await fetchData()
             }
         }
     }
 }
-
 
 struct GridCell: View {
     let photo: Photo
@@ -60,14 +64,35 @@ struct ContentView_Previews: PreviewProvider {
 
 
 extension ContentView {
-    func fetchData(page: Int = 0) {
-        DataNetworkService().fetchDataFor(request: PhotoDataRequest(endPoint: URLEndPoint.list)) { results in
-            switch results {
-            case .success(let data):
-                self.results += data
-            case .failure(let error):
-                print(error)
+    func fetchData() async {
+        await self.viewModel.fetchPhotosForOffset(page, request: PhotoDataRequest(endPoint: URLEndPoint.list))
+    }
+}
+
+extension View {
+    func errorAlert(error: Binding<Error?>, buttonTitle: String = "OK") -> some View {
+        let localizedAlertError = LocalizedAlertError(error: error.wrappedValue)
+        return alert(isPresented: .constant(localizedAlertError != nil), error: localizedAlertError) { _ in
+            Button(buttonTitle) {
+                error.wrappedValue = nil
             }
+        } message: { error in
+            Text(error.recoverySuggestion ?? "")
         }
+    }
+}
+
+struct LocalizedAlertError: LocalizedError {
+    let underlyingError: LocalizedError
+    var errorDescription: String? {
+        underlyingError.errorDescription
+    }
+    var recoverySuggestion: String? {
+        underlyingError.recoverySuggestion
+    }
+
+    init?(error: Error?) {
+        guard let localizedError = error as? LocalizedError else { return nil }
+        underlyingError = localizedError
     }
 }

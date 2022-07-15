@@ -5,39 +5,22 @@
 //  Created by Kalaiprabbha L on 15/02/22.
 //
 
-import UIKit
+import Combine
 
-class ImageFeedViewModel {
+class ImageFeedViewModel: ObservableObject {
     private var service: NetworkService
 
     init(service: NetworkService) {
         self.service = service
     }
-    var photos: [Photo] = [Photo]() {
-        didSet {
-            reloadViewClosure?()
-        }
-    }
-    var alertMessage: String? {
-        didSet {
-            showAlertClosure?()
-        }
-    }
-    
-    var reloadViewClosure: (()->())?
-    var showAlertClosure: (()->())?
-    
-    
-    func fetchPhotosForOffset<T: DataRequest>(_ offset: Int, request: T) {
-        service.fetchDataFor(request: request) { [weak self] result in
-            switch result {
-            case .success(let data):
-                if let photos = data as? [Photo] {
-                    self?.photos += photos
-                }
-            case .failure(let error):
-                self?.alertMessage = error.localizedDescription
-            }
+    @Published var photos: [Photo] = [Photo]()
+    @Published var alertMessage: Error?
+
+    @MainActor func fetchPhotosForOffset<T: DataRequest>(_ offset: Int, request: T) async {
+        do {
+            self.photos = try await service.fetchDataFor(request: request) as? [Photo] ?? []
+        } catch {
+            self.alertMessage = error
         }
     }
 }
