@@ -36,5 +36,258 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E0C43F95-5F0E-4F7E-B1CF-DD537E197E8F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageFeedSwiftUITests/ImageFeedSwiftUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "decode(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E0C43F95-5F0E-4F7E-B1CF-DD537E197E8F - b66d98cd7fbc7718"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImageFeedSwiftUITests.MockRequest.decode(Foundation.Data) throws -&gt; Swift.Array&lt;ImageFeedSwiftUI.Photo&gt;"
+                  moduleName = "ImageFeedSwiftUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kall/Documents/Learning/ImageFeedSwiftUI/ImageFeedSwiftUITests/ImageFeedSwiftUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "260">
+               </Location>
+               <Location
+                  uuid = "E0C43F95-5F0E-4F7E-B1CF-DD537E197E8F - b66d98cd7fbc777d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImageFeedSwiftUITests.MockRequest.decode(Foundation.Data) throws -&gt; Swift.Array&lt;ImageFeedSwiftUI.Photo&gt;"
+                  moduleName = "ImageFeedSwiftUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kall/Documents/Learning/ImageFeedSwiftUI/ImageFeedSwiftUITests/ImageFeedSwiftUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "38"
+                  endingLineNumber = "38"
+                  offsetFromSymbolStart = "93">
+               </Location>
+               <Location
+                  uuid = "E0C43F95-5F0E-4F7E-B1CF-DD537E197E8F - b66d98cd7fbc71f1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImageFeedSwiftUITests.MockRequest.decode(Foundation.Data) throws -&gt; Swift.Array&lt;ImageFeedSwiftUI.Photo&gt;"
+                  moduleName = "ImageFeedSwiftUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kall/Documents/Learning/ImageFeedSwiftUI/ImageFeedSwiftUITests/ImageFeedSwiftUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "93">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C7C37163-DBD0-4A62-BC99-FAE4BE640A71"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageFeedSwiftUITests/ImageFeedSwiftUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "url"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "C7C37163-DBD0-4A62-BC99-FAE4BE640A71 - f3f714b22a7e015"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImageFeedSwiftUITests.MockRequest.url.getter : Swift.String"
+                  moduleName = "ImageFeedSwiftUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kall/Documents/Learning/ImageFeedSwiftUI/ImageFeedSwiftUITests/ImageFeedSwiftUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "C7C37163-DBD0-4A62-BC99-FAE4BE640A71 - f3f714b22a7e015"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImageFeedSwiftUITests.MockRequest.url.getter : Swift.String"
+                  moduleName = "ImageFeedSwiftUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kall/Documents/Learning/ImageFeedSwiftUI/ImageFeedSwiftUITests/ImageFeedSwiftUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "29"
+                  endingLineNumber = "29"
+                  offsetFromSymbolStart = "6">
+               </Location>
+               <Location
+                  uuid = "C7C37163-DBD0-4A62-BC99-FAE4BE640A71 - f3f714b22a7e0f4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImageFeedSwiftUITests.MockRequest.url.getter : Swift.String"
+                  moduleName = "ImageFeedSwiftUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kall/Documents/Learning/ImageFeedSwiftUI/ImageFeedSwiftUITests/ImageFeedSwiftUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "8">
+               </Location>
+               <Location
+                  uuid = "C7C37163-DBD0-4A62-BC99-FAE4BE640A71 - f3f714b22a7e268"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImageFeedSwiftUITests.MockRequest.url.getter : Swift.String"
+                  moduleName = "ImageFeedSwiftUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kall/Documents/Learning/ImageFeedSwiftUI/ImageFeedSwiftUITests/ImageFeedSwiftUITests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "8">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DDE72B2F-54CE-4D5E-AD12-E2CBCFEAE4C0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageFeedSwiftUI/Service/RestAPIHelper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "getURLRequest(request:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DDE72B2F-54CE-4D5E-AD12-E2CBCFEAE4C0 - b1a0f4f57386c3fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImageFeedSwiftUI.DataNetworkService.getURLRequest&lt;&#x3c4;_0_0 where &#x3c4;_0_0: ImageFeedSwiftUI.DataRequest&gt;(request: &#x3c4;_0_0) -&gt; Swift.Optional&lt;Foundation.URLRequest&gt;"
+                  moduleName = "ImageFeedSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kall/Documents/Learning/ImageFeedSwiftUI/ImageFeedSwiftUI/Service/RestAPIHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "445">
+               </Location>
+               <Location
+                  uuid = "DDE72B2F-54CE-4D5E-AD12-E2CBCFEAE4C0 - b1a0f4f57386c3fe"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ImageFeedSwiftUI.DataNetworkService.getURLRequest&lt;&#x3c4;_0_0 where &#x3c4;_0_0: ImageFeedSwiftUI.DataRequest&gt;(request: &#x3c4;_0_0) -&gt; Swift.Optional&lt;Foundation.URLRequest&gt;"
+                  moduleName = "ImageFeedSwiftUI"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/kall/Documents/Learning/ImageFeedSwiftUI/ImageFeedSwiftUI/Service/RestAPIHelper.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87"
+                  offsetFromSymbolStart = "502">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4143BF91-8E21-4024-B67B-2E2544ECA4E0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageFeedSwiftUI/Service/RestAPIHelper.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "fetchDataFor(request:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "99CAC518-9A8D-47B2-9212-EC5DEFB4E706"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageFeedSwiftUITests/ImageFeedSwiftUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "decode(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B5D023E1-5DB4-49A4-B667-8A684C5C55BB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageFeedSwiftUITests/ImageFeedSwiftUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "testServiceError()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DE15D57E-37FE-44BB-A4DD-2A78BEB6E122"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ImageFeedSwiftUITests/ImageFeedSwiftUITests.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "testServiceFailure()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

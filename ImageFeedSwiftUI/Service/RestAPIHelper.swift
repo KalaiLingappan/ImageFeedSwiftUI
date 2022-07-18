@@ -33,7 +33,7 @@ enum ErrorResponse: String, Error {
          NSError(
             domain: rawValue,
             code: errorCode,
-            userInfo: ["description": description]
+            userInfo: [NSLocalizedDescriptionKey: description]
         )
     }
 }

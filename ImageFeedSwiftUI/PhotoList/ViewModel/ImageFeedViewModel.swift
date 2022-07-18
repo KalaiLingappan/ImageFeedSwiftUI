@@ -6,6 +6,7 @@
 //
 
 import Combine
+import UIKit
 
 class ImageFeedViewModel: ObservableObject {
     private var service: NetworkService
@@ -24,3 +25,4 @@ class ImageFeedViewModel: ObservableObject {
         }
     }
 }
+
